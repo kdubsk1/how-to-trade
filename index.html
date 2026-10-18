@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How To Trade — Made by kw</title>
+<meta name="description" content="How To Trade — A Complete Guide to Futures, Markets and What Moves Them. A free textbook, made by kw. CC BY-NC-ND 4.0.">
+<link rel="stylesheet" href="engine/fonts.css">
+<link rel="stylesheet" href="engine/reader.css">
+</head>
+<body>
+<div id="scene">
+  <div id="closed" class="center">
+    <div class="stage3d">
+      <div class="book3d" id="book3d" role="button" tabindex="0" aria-label="Open the book: How To Trade">
+        <span class="face shadow3d"></span>
+        <span class="face back"></span>
+        <span class="face edge-fore"></span>
+        <span class="face edge-tail"></span>
+        <span class="face spine"></span>
+        <span class="face front" id="front3d"></span>
+      </div>
+    </div>
+  </div>
+  <p class="hint" id="hint">Click the book to open it</p>
+  <div id="open" class="center off"><div id="flip"></div></div>
+</div>
+
+<nav id="topbar" hidden aria-label="Book controls">
+  <button class="ui-btn" id="contentsBtn">Contents</button>
+  <button class="ui-btn" id="searchBtn" aria-pressed="false">Search</button>
+  <button class="ui-btn wide" id="glossBtn">Glossary</button>
+  <button class="ui-btn wide" id="bmBtn" aria-pressed="false">Bookmarks</button>
+  <button class="ui-btn wide" id="setBtn" aria-pressed="false">Settings</button>
+  <button class="ui-btn" id="backBtn" disabled title="Back to where you were">Back</button>
+  <form id="gotoForm" class="wide"><input id="gotoInput" inputmode="numeric" placeholder="Page" aria-label="Go to page"><button class="ui-btn" type="submit">Go</button></form>
+  <button class="ui-btn wide" id="resumeBtn" hidden data-pos="0">Resume</button>
+  <button class="ui-btn wide" id="closeBtn">Close book</button>
+  <button class="ui-btn narrow" id="menuBtn" aria-pressed="false">Menu</button>
+</nav>
+<button class="arrow" id="prev" aria-label="Previous page" hidden>‹</button>
+<button class="arrow" id="next" aria-label="Next page" hidden>›</button>
+
+<aside id="drawer" hidden aria-label="Panel">
+  <header><span id="drawerTitle"></span><button class="ui-btn" id="drawerClose" aria-label="Close panel">✕</button></header>
+  <div class="dbody" id="drawerBody"></div>
+</aside>
+<div id="tip" role="tooltip" hidden></div>
+<div id="toast" role="status" hidden></div>
+<div id="measure" aria-hidden="true"></div>
+<noscript><p style="color:#ecdcbc;padding:2em;font-family:Georgia,serif">This book needs JavaScript turned on in your browser.</p></noscript>
+
+<script src="engine/page-flip.browser.js"></script>
+<script src="data/book.js"></script>
+<script src="engine/art.js"></script>
+<script src="engine/reader.js"></script>
+</body>
+</html>

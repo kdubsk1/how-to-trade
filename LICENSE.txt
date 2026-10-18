@@ -1,0 +1,17 @@
+How To Trade — A Complete Guide to Futures, Markets and What Moves Them
+Made by kw.
+
+The book's text and charts are licensed under the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0).
+In short: anyone may read, copy and share the book, unchanged and with credit to kw,
+for free. It may not be sold, and edited versions may not be shared.
+Full terms: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Parts of the book's software have their own licenses:
+- engine/page-flip.browser.js: StPageFlip 2.0.7, (c) 2020 Nodlik, MIT License
+  (engine/page-flip.LICENSE.txt).
+- engine/fonts/: each font family is licensed under the SIL Open Font License 1.1;
+  the license is in each family's folder (OFL.txt).
+
+Education only. Not financial, investment, tax or legal advice. Trading futures
+carries a substantial risk of loss.
